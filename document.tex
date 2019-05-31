@@ -69,8 +69,18 @@ In this project, we will model the non-adjusted monthly unemployment rates in Ca
 	\includegraphics[width=\linewidth]{ny_cusum}
 	\caption{New York ARIMA Model CUSUM } 
 \end{figure}
-\noindent The CUSUM for the New York model also fits well, but has trouble with the time periods t = 150, 300 and 350, which correspond to . \\
+\noindent The CUSUM for the New York model also fits well, but has trouble with the time periods t = 150, 300 and 350, which correspond to . 
 
 
-\noindent (g) The recursive residuals are show below:
+\noindent \newpage (g) The recursive residuals are show below:
+\begin{figure}[H]
+	
+	\includegraphics[width=\linewidth]{ca_reresid}
+	\includegraphics[width=\linewidth]{ny_recresid}
+	\caption{ARIMA Recursive Residuals} 
+\end{figure}
+
+(h) 
+
+(i) We observe the cross-correlation function between the unemployment time series for both states. The CCF shows that there is a auto-regressive cross-dependence between unemployment in the two states. We fit a vector auto-regressive (VAR) model with lag order 4 to the data. The model fits and residuals are shown below.
 \end{document}

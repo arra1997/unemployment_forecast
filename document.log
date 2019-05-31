@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.21)  31 MAY 2019 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.21)  31 MAY 2019 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -323,29 +323,35 @@ File: ny_cusum.png Graphic file (type png)
 <use ny_cusum.png>
 Package pdftex.def Info: ny_cusum.png  used on input line 69.
 (pdftex.def)             Requested size: 397.485pt x 126.12175pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-[6 <./ca_cusum.png> <./ny_cusum.png>] (./document.aux) ) 
+ [6 <./ca_cusum.png> <./ny_cusum.png>]
+<ca_reresid.png, id=39, 876.27374pt x 260.975pt>
+File: ca_reresid.png Graphic file (type png)
+<use ca_reresid.png>
+Package pdftex.def Info: ca_reresid.png  used on input line 78.
+(pdftex.def)             Requested size: 397.485pt x 118.38142pt.
+<ny_recresid.png, id=40, 876.27374pt x 258.9675pt>
+File: ny_recresid.png Graphic file (type png)
+<use ny_recresid.png>
+Package pdftex.def Info: ny_recresid.png  used on input line 79.
+(pdftex.def)             Requested size: 397.485pt x 117.4708pt.
+ [7 <./ca_reresid.png> <./ny_recresid.png>] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 3103 strings out of 494923
- 48783 string characters out of 6180742
+ 3113 strings out of 494923
+ 48966 string characters out of 6180742
  104857 words of memory out of 5000000
- 6395 multiletter control sequences out of 15000+600000
+ 6403 multiletter control sequences out of 15000+600000
  7280 words of font info for 26 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,6n,39p,382b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb>
-Output written on document.pdf (6 pages, 342202 bytes).
+</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb>
+Output written on document.pdf (7 pages, 429983 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
