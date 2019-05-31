@@ -33,7 +33,7 @@ library(dplyr)
 library(vars)
 
 
-setwd('/home/arvind/Desktop/project2')
+setwd('C:/Users/arra1/Desktop/unemployment_forecast')
 input1 = read.csv('CAURN.csv')
 input2 = read.csv('NYURN.csv')
 
@@ -116,12 +116,9 @@ plot(stability(var_model, type = "Rec-CUSUM"), plot.type="single")
 
 # Granger-Causality test
 grangertest(unemployment_ca ~ unemployment_ny, order = 6)
+grangertest(unemployment_ny ~ unemployment_ca, order = 6)
 
 #12-step ahead forecast
 var.predict = predict(object=var_model, n.ahead=12)
 plot(var.predict)
-
-
-
-
 

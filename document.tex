@@ -45,7 +45,7 @@ In this project, we will model the non-adjusted monthly unemployment rates in Ca
 	\caption{New York ARIMA Model -  In the first plot, the green line is the original time series and the red line is the model fit. The second plot shows the model residuals.} 
 \end{figure}
 
-\noindent (e) The ACF and PACF plots of the residuals show that there is some remaining autoregressive component, which indicates (as we said above) that the model has not fully fit the seasonality of the unemployment time series. 
+\noindent (d) The ACF and PACF plots of the residuals show that there is some remaining autoregressive component, which indicates (as we said above) that the model has not fully fit the seasonality of the unemployment time series. 
  \begin{figure}[H]
 	
 	\includegraphics[width=380pt]{ca_residuals_acf}
@@ -54,7 +54,7 @@ In this project, we will model the non-adjusted monthly unemployment rates in Ca
 \end{figure}
 
 
-\noindent (f) The CUSUM for both ARIMA models are shown below. The CUSUM for our model for California indicates that while the model generally does a good job, it struggles at certain points in time, around t = 100, 200 and 400-470, which correspond to the years. 
+\noindent (e) The CUSUM for both ARIMA models are shown below. The CUSUM for our model for California indicates that while the model generally does a good job, it struggles at certain points in time, around t = 100, 200 and 400-470, which correspond to the years. 
 
 
 \begin{figure}[H]
@@ -72,7 +72,7 @@ In this project, we will model the non-adjusted monthly unemployment rates in Ca
 \noindent The CUSUM for the New York model also fits well, but has trouble with the time periods t = 150, 300 and 350, which correspond to . 
 
 
-\noindent \newpage (g) The recursive residuals are show below:
+\noindent \newpage (f) The recursive residuals are show below:
 \begin{figure}[H]
 	
 	\includegraphics[width=\linewidth]{ca_reresid}
@@ -80,7 +80,43 @@ In this project, we will model the non-adjusted monthly unemployment rates in Ca
 	\caption{ARIMA Recursive Residuals} 
 \end{figure}
 
-(h) 
+\noindent (g) 
 
-(i) We observe the cross-correlation function between the unemployment time series for both states. The CCF shows that there is a auto-regressive cross-dependence between unemployment in the two states. We fit a vector auto-regressive (VAR) model with lag order 4 to the data. The model fits and residuals are shown below.
+
+\noindent (h) The 12-month forecast and the error bands are as follows.
+\begin{figure}[H]
+	
+	\includegraphics[width=\linewidth]{ca_arima_forecast}
+	\includegraphics[width=\linewidth]{ny_arima_forecast}
+	\caption{12-month forecasts} 
+\end{figure}
+
+\noindent (i) We observe the cross-correlation function between the unemployment time series for both states. The CCF shows that there is a auto-regressive cross-dependence between unemployment in the two states. We fit a vector auto-regressive (VAR) model with lag order 4 to the data. The model fits and residuals are shown below.
+
+\begin{figure}[H]
+	
+	\includegraphics[width=\linewidth]{ca_var_fit}
+	\includegraphics[width=\linewidth]{ny_var_fit}
+	\caption{Vector Auto-Regression Model Fit and Residuals} 
+\end{figure}
+
+\noindent (j)\begin{figure}[H]
+	
+	\includegraphics[width=\linewidth]{var_irf}
+	\caption{Vector Auto-Regression Impulse Response} 
+\end{figure}
+
+\noindent (k) 
+\begin{figure}[H]
+	
+	\includegraphics[width=\linewidth]{granger}
+	\caption{Granger-Casuality Test Results} 
+\end{figure}
+
+\noindent (l)
+\begin{figure}[H]
+	
+	\includegraphics[width=\linewidth]{var_forecast}
+	\caption{Vector Auto-Regression 12-month ahead forecast} 
+\end{figure}
 \end{document}
